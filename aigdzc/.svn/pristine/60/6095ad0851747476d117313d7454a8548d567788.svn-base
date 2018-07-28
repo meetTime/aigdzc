@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<statements>
+  <sql id="AddChannel">
+    INSERT INTO [News_Channel]
+    ([Name]
+    ,[ParentId]
+    ,[SortNumber]
+    ,[RecordStatus])
+    VALUES
+    (#Name#
+    ,#ParentId#
+    ,#SortNumber#
+    ,#RecordStatus#)
+    select scope_identity()
+  </sql>
+
+  <sql id="EditChannel">
+    update News_Channel set
+    [Name]=#Name#,
+    ParentId=#ParentId#,
+    SortNumber=#SortNumber#
+    where ChannelId=#ChannelId#
+  </sql>
+
+  <sql id="DeleteChannel">
+    delete from News_Channel where ChannelId=#ChannelId# and RecordStatus=1
+  </sql>
+
+  <sql id="GetChannel">
+    select * from News_Channel where 1=1
+    <condition property="ChannelIds">
+      and ChannelId in ($ChannelIds$)
+    </condition>
+    <condition property="RecordStatus">
+      and RecordStatus=#RecordStatus#
+    </condition>
+    <condition property="ParentId">
+      and ParentId=#ParentId#
+    </condition>
+    <condition property="Name">
+      and Name=#Name#
+    </condition>
+    <condition property="ChannelId">
+      and ChannelId=#ChannelId#
+    </condition>
+  </sql>
+</statements>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<statements>
+  <sql id="AddRegion">
+    INSERT INTO [Cfg_Region]
+    ([Name]
+    ,[ParentId]
+    ,[SortNumber])
+    VALUES
+    (#Name#
+    ,#ParentId#
+    ,#SortNumber#)
+    select scope_identity()
+  </sql>
+
+  <sql id="EditRegion">
+    update Cfg_Region set
+    [Name]=#Name#,
+    ParentId=#ParentId#,
+    SortNumber=#SortNumber#
+    where
+    RegionId=#RegionId#
+  </sql>
+
+  <sql id="DeleteRegion">
+    delete from Cfg_Region where RegionId=#RegionId#
+  </sql>
+
+  <sql id="GetRegion">
+    select * from Cfg_Region where 1=1
+    <condition property="RegionIds">
+      and RegionId in ($RegionIds$)
+    </condition>
+    <condition property="ParentId">
+      and ParentId=#ParentId#
+    </condition>
+    <condition property="RegionId">
+      and RegionId=#RegionId#
+    </condition>
+    <condition property="Name">
+      and Name=#Name#
+    </condition>
+    order by SortNumber,RegionId
+  </sql>
+
+  <sql id="AddRoundPlay">
+    INSERT INTO [Cfg_RoundPlay]
+    ([ImageUrl]
+    ,[ChannelId]
+    ,[AssociatedArticleId])
+    VALUES
+    (#ImageUrl#
+    ,#ChannelId#
+    ,#AssociatedArticleId#)
+    select scope_identity()
+  </sql>
+
+  <sql id="EditRoundPlay">
+    update Cfg_RoundPlay set
+    ImageUrl=#ImageUrl#,
+    ChannelId=#ChannelId#,
+    AssociatedArticleId=#AssociatedArticleId#
+    where RoundPlayId=#RoundPlayId#
+  </sql>
+
+  <sql id="DeleteRoundPlay">
+    delete from Cfg_RoundPlay where RoundPlayId=#RoundPlayId#
+  </sql>
+
+  <sql id="GetRoundPlay">
+    select 
+    <condition property="Top">
+      top #Count#
+    </condition>
+    *
+    from="" Cfg_RoundPlay where 1=1
+    <condition property="RoundPlayIds">
+      and RoundPlayId in ($RoundPlayIds$)
+    </condition>
+    <condition property="RoundPlayId">
+      and RoundPlayId=#RoundPlayId#
+    </condition>
+    <condition property="ChannelId">
+      and ChannelId=#ChannelId#
+    </condition>
+    <condition property="AssociatedArticleId">
+      and AssociatedArticleId=#AssociatedArticleId#
+    </condition>
+    order by RoundPlayId desc
+  </sql>
+
+  <sql id="AddSiteLink">
+    INSERT INTO [Cfg_SiteLink]
+    ([Name]
+    ,[LinkUrl]
+    ,[ChannelId])
+    VALUES
+    (#Name#
+    ,#LinkUrl#
+    ,#ChannelId#)
+    select scope_identity()
+  </sql>
+
+  <sql id="EditSiteLink">
+    update Cfg_SiteLink set
+    [Name]=#Name#,
+    LinkUrl=#LinkUrl#,
+    ChannelId=#ChannelId#
+    where SiteLinkId=#SiteLinkId#
+  </sql>
+
+  <sql id="DeleteSiteLink">
+    delete from Cfg_SiteLink where SiteLinkId=#SiteLinkId#
+  </sql>
+
+  <sql id="GetSiteLink">
+    select * from Cfg_SiteLink where 1=1
+    <condition property="SiteLinkIds">
+      and SiteLinkId in ($SiteLinkIds$)
+    </condition>
+    <condition property="SiteLinkId">
+      and SiteLinkId=#SiteLinkId#
+    </condition>
+    <condition property="ChannelId">
+      and ChannelId=#ChannelId#
+    </condition>
+    <condition property="Name">
+      and Name=#Name#
+    </condition>
+    order by SiteLinkId desc
+  </sql>
+
+  <sql id="AddAboutUs">
+    INSERT INTO [Cfg_AboutUs]
+    ([Name]
+    ,[Title]
+    ,[Content]
+    ,[CreatedTime]
+    ,[CreatorId])
+    VALUES
+    (#Name#
+    ,#Title#
+    ,#Content#
+    ,#CreatedTime#
+    ,#CreatorId#)
+    select scope_identity()
+  </sql>
+
+  <sql id="EditAboutUs">
+    update Cfg_AboutUs set
+    [Name]=#Name#,
+    [Title]=#Title#,
+    [Content]=#Content#,
+    [UpdaterId]=#UpdaterId#,
+    [UpdatedTime]=#UpdatedTime#
+    where AboutUsId=#AboutUsId#
+  </sql>
+
+  <sql id="DeleteAboutUs">
+    delete from Cfg_AboutUs where AboutUsId=#AboutUsId#
+  </sql>
+
+  <sql id="GetAboutUs">
+    select * from Cfg_AboutUs where 1=1
+    <condition property="AboutUsId">
+      and AboutUsId=#AboutUsId#
+    </condition>
+    <condition property="Name">
+      and Name=#Name#
+    </condition>
+  </sql>
+</statements>

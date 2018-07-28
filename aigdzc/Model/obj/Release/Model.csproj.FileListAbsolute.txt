@@ -1,0 +1,9 @@
+D:\WebProject\aigdzc\Model\bin\Release\Model.dll
+D:\WebProject\aigdzc\Model\bin\Release\Model.pdb
+D:\WebProject\aigdzc\Model\bin\Release\CCITU.Common.dll
+D:\WebProject\aigdzc\Model\bin\Release\Newtonsoft.Json.dll
+D:\WebProject\aigdzc\Model\bin\Release\CCITU.Common.pdb
+D:\WebProject\aigdzc\Model\bin\Release\Newtonsoft.Json.xml
+D:\WebProject\aigdzc\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\WebProject\aigdzc\Model\obj\Release\Model.dll
+D:\WebProject\aigdzc\Model\obj\Release\Model.pdb

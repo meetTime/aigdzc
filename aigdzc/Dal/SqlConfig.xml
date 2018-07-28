@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <SqlResources>
+    <SqlResource Url="Sql/Account.xml"></SqlResource>
+    <SqlResource Url="Sql/Log.xml"></SqlResource>
+    <SqlResource Url="Sql/Config.xml"></SqlResource>
+  </SqlResources>
+</configuration>

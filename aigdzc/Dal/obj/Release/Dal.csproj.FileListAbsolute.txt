@@ -1,0 +1,13 @@
+D:\WebProject\aigdzc\Dal\bin\Release\Dal.dll
+D:\WebProject\aigdzc\Dal\bin\Release\Dal.pdb
+D:\WebProject\aigdzc\Dal\bin\Release\CCITU.Common.dll
+D:\WebProject\aigdzc\Dal\bin\Release\Model.dll
+D:\WebProject\aigdzc\Dal\bin\Release\Victory.Dao.dll
+D:\WebProject\aigdzc\Dal\bin\Release\Newtonsoft.Json.dll
+D:\WebProject\aigdzc\Dal\bin\Release\CCITU.Common.pdb
+D:\WebProject\aigdzc\Dal\bin\Release\Model.pdb
+D:\WebProject\aigdzc\Dal\bin\Release\Victory.Dao.pdb
+D:\WebProject\aigdzc\Dal\bin\Release\Newtonsoft.Json.xml
+D:\WebProject\aigdzc\Dal\obj\Release\Dal.csprojResolveAssemblyReference.cache
+D:\WebProject\aigdzc\Dal\obj\Release\Dal.dll
+D:\WebProject\aigdzc\Dal\obj\Release\Dal.pdb

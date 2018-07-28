@@ -1,0 +1,5 @@
+D:\WebProject\aigdzc\Victory.Dao\bin\Release\Victory.Dao.dll
+D:\WebProject\aigdzc\Victory.Dao\bin\Release\Victory.Dao.pdb
+D:\WebProject\aigdzc\Victory.Dao\obj\Release\Victory.Dao.csprojResolveAssemblyReference.cache
+D:\WebProject\aigdzc\Victory.Dao\obj\Release\Victory.Dao.dll
+D:\WebProject\aigdzc\Victory.Dao\obj\Release\Victory.Dao.pdb
